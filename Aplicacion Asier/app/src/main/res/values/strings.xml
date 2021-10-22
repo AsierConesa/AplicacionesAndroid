@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Aplicacion Asier</string>
+    <string name="txtTitle">Nombre de la App</string>
+    <string name="createGroupButton">Nuevo Grupo</string>
+    <string name="MyGroupsButton">Mis Grupos</string>
+    <string name="nextDatesButton">Próximas Citas</string>
+    <string name="groupName1" >Nombre del grupo</string>
+    <string name="groupDescription">Descripción del grupo</string>
+    <string name="GeneralLocation">Localización general</string>
+    <string name="InfoGroupButton">Información del Grupo</string>
+    <string name="CreateDateButton">Organizar quedada</string>
 </resources>
