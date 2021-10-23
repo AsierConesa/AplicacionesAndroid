@@ -9,4 +9,18 @@
     <string name="GeneralLocation">Localización general</string>
     <string name="InfoGroupButton">Información del Grupo</string>
     <string name="CreateDateButton">Organizar quedada</string>
+    <string name="lblInsertName">Nombre del grupo:</string>
+    <string name="cellInputName">Nombre</string>
+    <string name="labelDescription">Descripción del grupo:</string>
+    <string name="lblSetPhoto">Foto de grupo:</string>
+    <string name="btnGroupPhoto">Hacer una foto</string>
+    <string name="cellDescriptionGroup">Descripción:</string>
+    <string name="lblGroupLocation">Localización del grupo:</string>
+    <string name="cellInputLocation">Localización</string>
+    <string name="lblGroupMembers">Miembros del grupo:</string>
+    <string name="cellAddGroupMember">Nombre del miembro</string>
+    <string name="btnAddGroupMember">Añadir</string>
+    <string name="lblTituloQuedada">Título de la quedada</string>
+    <string name="lblFechaQuedada">01/01/2022</string>
+    <string name="lblLocationMeet">Localización</string>
 </resources>
