@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MisIntents</string>
+    <string name="llamar_por_tel_fono">llamar por teléfono</string>
+    <string name="abrir_google_maps">abrir google maps</string>
+    <string name="mandar_correo">mandar correo</string>
+    <string name="abrir_p_gina_web">Abrir página web</string>
+    <string name="crear_temporizador">Crear temporizador</string>
+</resources>
