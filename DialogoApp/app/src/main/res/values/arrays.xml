@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="departamentos">
+        <item>"Informática"</item>
+        <item>"Comercio"</item>
+        <item>"Contabilidad"</item>
+    </string-array>
+    <string-array name="tiposIncidencias">
+        <item>"Mal funcionamiento sensores"</item>
+        <item>"Mal funcionamiento ordenador"</item>
+        <item>"Mal funcionamiento sistema seguridad"</item>
+    </string-array>
+
+</resources>
