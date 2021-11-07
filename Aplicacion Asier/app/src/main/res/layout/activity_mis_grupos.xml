@@ -20,16 +20,20 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/btnMisGrupos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/MyGroupsButton" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/btnNuevoGrupo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="btnNuevoGrupo"
             android:text="@string/createGroupButton" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/btnProximasCitas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nextDatesButton" />

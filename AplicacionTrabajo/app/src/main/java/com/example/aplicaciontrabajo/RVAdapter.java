@@ -34,13 +34,13 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.cv);
             nombreGrupo = (TextView) itemView.findViewById(R.id.person_name);
-            nMiembros = (TextView) itemView.findViewById(R.id.puntos);
+            nMiembros = (TextView) itemView.findViewById(R.id.miembros);
             groupPhoto = (ImageView) itemView.findViewById(R.id.person_photo);
         }
     }
 
     //1º CREAMOS LA VISTA SIN PERSONALIZAR CON DATOS
-//Ya devuelve un ViewHolder
+    //Ya devuelve un ViewHolder
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
 
@@ -61,7 +61,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
         viewHolder.nMiembros.setText(String.valueOf(grupos.get(posicion).nMiembros));
         viewHolder.groupPhoto.setImageResource(grupos.get(posicion).photoId);
 
-//Asignamos un listener
+    //Asignamos un listener
         viewHolder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

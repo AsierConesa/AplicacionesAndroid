@@ -43,17 +43,17 @@ public class MainActivity extends AppCompatActivity {
         grupos = new ArrayList<>();
 
         grupos.add(new Grupo("JLA", 10, R.drawable.ic_adb_64));
-        grupos.add(new Grupo("Los Mosca", 4, R.drawable.ic_alarm_add_64));
-        grupos.add(new Grupo("Martín Gutierrez", 12, R.drawable.ic_android_64));
-        grupos.add(new Grupo("Rocío Puertas", 7, R.drawable.ic_adb_64));
-        grupos.add(new Grupo("Andrea Pérez", 7, R.drawable.ic_alarm_add_64));
-        grupos.add(new Grupo("Luis Granados", 6, R.drawable.ic_android_64));
-        grupos.add(new Grupo("Diego Redondo", 70, R.drawable.ic_adb_64));
-        grupos.add(new Grupo("Alberto Negrero", 8, R.drawable.ic_alarm_add_64));
-        grupos.add(new Grupo("Sofía Martínez", 16, R.drawable.ic_android_64));
-        grupos.add(new Grupo("Petra Álvarez", 14, R.drawable.ic_adb_64));
-        grupos.add(new Grupo("Domingo Redondo", 2, R.drawable.ic_alarm_add_64));
-        grupos.add(new Grupo("Amparo Leal", 12, R.drawable.ic_android_64));
+        grupos.add(new Grupo("Los Mosca", 5, R.drawable.ic_alarm_add_64));
+        grupos.add(new Grupo("DAM 2", 21, R.drawable.ic_android_64));
+        grupos.add(new Grupo("Grupo Madrid", 7, R.drawable.ic_adb_64));
+        grupos.add(new Grupo("Los VGA", 7, R.drawable.ic_alarm_add_64));
+        grupos.add(new Grupo("Quedadas Londres", 6, R.drawable.ic_android_64));
+        grupos.add(new Grupo("Amigos Infancia", 70, R.drawable.ic_adb_64));
+        grupos.add(new Grupo("Piso", 3, R.drawable.ic_alarm_add_64));
+        grupos.add(new Grupo("Purr Group", 16, R.drawable.ic_android_64));
+        grupos.add(new Grupo("Quedada Domingo", 14, R.drawable.ic_adb_64));
+        grupos.add(new Grupo("Navidad en el pueblo", 7, R.drawable.ic_alarm_add_64));
+        grupos.add(new Grupo("Los Mejores", 12, R.drawable.ic_android_64));
 
     }
 }
