@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">AplicacionTrabajo</string>
-    <string name="page_title">Menú principal</string>
+    <string name="page_title">Nombre de la App</string>
 </resources>
