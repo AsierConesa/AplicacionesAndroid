@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonAñadirLlamada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="escribirFilaEjemplo"
+        android:text="Añadir Llamada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLlamadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:onClick="llamadas"
+        android:text="Llamadas"
+        app:layout_constraintEnd_toEndOf="@+id/buttonEliminarUnaLlamada"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEliminarUnaLlamada" />
+
+    <Button
+        android:id="@+id/buttonModificarNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="modificarFila"
+        android:text="Modificar un número"
+        app:layout_constraintEnd_toEndOf="@+id/buttonModificarNumeros"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModificarNumeros" />
+
+    <Button
+        android:id="@+id/buttonEliminarUnaLlamada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="eliminarFila"
+        android:text="Eliminar una llamada"
+        app:layout_constraintEnd_toEndOf="@+id/buttonModificarNumero"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModificarNumero" />
+
+    <Button
+        android:id="@+id/buttonLimpiarLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:onClick="eliminarFilasEjemplo"
+        android:text="Limpiar Log"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAñadirLlamada"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAñadirLlamada" />
+
+    <Button
+        android:id="@+id/buttonModificarNumeros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:onClick="modificarFilasEjemplo"
+        android:text="Modificar números"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLimpiarLog"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLimpiarLog" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="361dp"
+        android:layout_height="339dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLlamadas" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
