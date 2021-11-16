@@ -3,9 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/SQLite/app/src/main/res/layout/activity_insert.xml" value="0.36666666666666664" />
-        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/SQLite/app/src/main/res/layout/activity_insert_varios_campos.xml" value="0.36666666666666664" />
-        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/SQLite/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/FireBase/app/src/main/res/layout/activity_insert.xml" value="0.33" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/FireBase/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/FireBase/app/src/main/res/layout/activity_update.xml" value="0.33" />
       </map>
     </option>
   </component>
