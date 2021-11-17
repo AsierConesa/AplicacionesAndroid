@@ -62,7 +62,7 @@ public class MainGrupos extends AppCompatActivity {
 
     private void inicializarDatos(){
 
-        String[] camposMostrar = new String[]{"cod_grupo","nombregrupo"};
+        String[] camposMostrar = new String[]{"nombregrupo","descripciongrupo"};
         grupos = new ArrayList<>();
 
         if (bbdd != null){
@@ -71,7 +71,7 @@ public class MainGrupos extends AppCompatActivity {
 
             if(c1.moveToFirst()){
                 do{
-                    grupos.add(new Grupo(c1.getString(1), c1.getInt(0), R.drawable.ic_adb_64));
+                    grupos.add(new Grupo(c1.getString(0), c1.getString(1), R.drawable.ic_adb_64));
                 }while (c1.moveToNext());
             }
         }

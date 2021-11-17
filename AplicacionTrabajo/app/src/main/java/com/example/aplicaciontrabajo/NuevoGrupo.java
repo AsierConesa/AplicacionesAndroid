@@ -7,11 +7,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import java.util.List;
 
 public class NuevoGrupo extends AppCompatActivity {
 
+    private EditText editTextNombre;
+    private EditText editTextDescripcion;
     private List<Grupo> grupos;
     private SQLiteDatabase bbdd;
     private bbddGrupos conexion;
@@ -20,6 +23,9 @@ public class NuevoGrupo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nuevo_grupo);
+
+        editTextNombre = findViewById(R.id.editTextNameGrupo);
+        editTextDescripcion = findViewById(R.id.editTextGroupDescription);
 
     }
 
@@ -30,10 +36,11 @@ public class NuevoGrupo extends AppCompatActivity {
         bbdd = conexion.getWritableDatabase(); //modo escritura
 
 
+
         //inserta grupo de ejemplo
         int codigoGrupo = 0;
-        String nombreGrupo = "Grupo de ejemplo";
-        String descripcionGrupo = "Descripcion de ejemplo";
+        String nombreGrupo = editTextNombre.getText().toString();
+        String descripcionGrupo = editTextDescripcion.getText().toString();
 
         if(bbdd!=null){
             String sql = ("INSERT INTO GRUPOS(COD_GRUPO,NOMBREGRUPO,DESCRIPCIONGRUPO) VALUES(?,?,?)");

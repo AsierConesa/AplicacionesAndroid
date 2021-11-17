@@ -58,7 +58,7 @@ public class RVAdapterGroup extends RecyclerView.Adapter<RVAdapterGroup.ViewHold
         final int posicion=i;
 
         viewHolder.nombreGrupo.setText(grupos.get(posicion).nombre);
-        viewHolder.nMiembros.setText(String.valueOf(grupos.get(posicion).nMiembros));
+        viewHolder.nMiembros.setText(String.valueOf(grupos.get(posicion).descripcion));
         viewHolder.groupPhoto.setImageResource(grupos.get(posicion).photoId);
 
     //Asignamos un listener

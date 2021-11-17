@@ -2,12 +2,12 @@ package com.example.aplicaciontrabajo;
 
 public class Grupo {
     String nombre;
-    int nMiembros;
+    String descripcion;
     int photoId;
 
-    public Grupo(String nombre, int nMiembros, int photoId){
+    public Grupo(String nombre, String descripcion, int photoId){
         this.nombre = nombre;
-        this.nMiembros = nMiembros;
+        this.descripcion = descripcion;
         this.photoId = photoId;
     }
 }
