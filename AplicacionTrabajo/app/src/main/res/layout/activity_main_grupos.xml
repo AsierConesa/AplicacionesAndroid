@@ -50,17 +50,17 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mis Grupos" />
+            android:text="@string/mis_grupos" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Horario" />
+            android:text="@string/horario" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mis Quedadas" />
+            android:text="@string/mis_quedadas" />
 
 
     </com.google.android.material.tabs.TabLayout>
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
             android:layout_margin="16dp"
-            android:contentDescription="Nuevo grupo/quedada"
+            android:contentDescription="@string/nuevo_grupo_quedada"
             android:onClick="crearNuevoElemento"
             app:backgroundTint="#E2C4FF"
             app:srcCompat="@drawable/ic_plus_24" />

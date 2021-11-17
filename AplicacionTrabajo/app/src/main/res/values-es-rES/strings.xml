@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicacion Trabajo</string>
+    <string name="page_title">Nombre de la App</string>
+    <string name="mis_grupos">Mis Grupos</string>
+    <string name="horario">Horario</string>
+    <string name="mis_quedadas">Mis Quedadas</string>
+    <string name="nuevo_grupo_quedada">Nuevo grupo/quedada</string>
+    <string name="crear_quedada">Crear Quedada</string>
+    <string name="descripci_n_de_la_quedada">Descripción de la quedada</string>
+    <string name="salida_de_domingo">Salida de domingo</string>
+    <string name="a_adir_quedada">Añadir quedada</string>
+    <string name="seleccionar_grupo">Seleccionar grupo</string>
+    <string name="nombre_de_la_quedada">Nombre de la quedada</string>
+    <string name="mi_quedada">Mi quedada</string>
+    <string name="grupo">Grupo</string>
+    <string name="quedada">Quedada</string>
+    <string name="qu_quieres_crear">¿Qué quieres crear?</string>
+    <string name="crear_grupo">Crear Grupo</string>
+    <string name="imagen_de_grupo">Imagen de grupo</string>
+    <string name="bot_n_para_crear_grupo">botón para crear grupo</string>
+    <string name="nombre_del_grupo">Nombre del grupo</string>
+    <string name="mi_grupo">Mi grupo</string>
+    <string name="descripci_n_del_grupo">Descripción del grupo</string>
+    <string name="los_mejores_amigos">Los mejores amigos</string>
+    <string name="a_adir_grupo">Añadir grupo</string>
+    <string name="imagen_del_grupo">imagen del grupo</string>
+    <string name="infobtn">info</string>
+    <string name="editbtn">Editar</string>
+</resources>

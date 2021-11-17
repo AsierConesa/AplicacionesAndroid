@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="añadirNuevaQuedada"
     tools:context=".NuevoGrupo">
 
     <TextView
@@ -13,7 +12,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="30dp"
-        android:text="Crear Grupo"
+        android:text="@string/crear_grupo"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="34sp"
@@ -29,11 +28,13 @@
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="206dp"
         android:background="#D6BDFF"
+        android:contentDescription="@string/bot_n_para_crear_grupo"
         app:layout_constraintBottom_toTopOf="@+id/btnAddGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        app:srcCompat="@drawable/ic_plus_24" />
+        app:srcCompat="@drawable/ic_plus_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -41,10 +42,12 @@
         android:layout_height="165dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="112dp"
+        android:contentDescription="@string/imagen_del_grupo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageButton"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView3"
@@ -52,7 +55,7 @@
         android:layout_height="26dp"
         android:layout_marginStart="172dp"
         android:layout_marginEnd="2dp"
-        android:text="Imagen de grupo"
+        android:text="@string/imagen_de_grupo"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -68,7 +71,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="50dp"
-        android:text="Nombre del grupo"
+        android:text="@string/nombre_del_grupo"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
@@ -83,12 +86,14 @@
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="34dp"
         android:ems="10"
-        android:hint="Mi grupo"
+        android:hint="@string/mi_grupo"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView5"
@@ -97,7 +102,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="504dp"
-        android:text="Descripción del grupo"
+        android:text="@string/descripci_n_del_grupo"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
@@ -111,12 +116,14 @@
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="160dp"
         android:ems="10"
-        android:hint="Los mejores amigos"
+        android:hint="@string/los_mejores_amigos"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnAddGroup"
@@ -125,7 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:onClick="añadirNuevoGrupo"
-        android:text="Añadir grupo"
+        android:text="@string/a_adir_grupo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
