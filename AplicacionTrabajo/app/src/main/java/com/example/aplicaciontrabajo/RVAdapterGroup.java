@@ -13,13 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
+public class RVAdapterGroup extends RecyclerView.Adapter<RVAdapterGroup.ViewHolder> {
 
     private LayoutInflater inflador;
 
     protected List<Grupo> grupos;
 
-    public RVAdapter(Context contexto, List<Grupo> grupos){
+    public RVAdapterGroup(Context contexto, List<Grupo> grupos){
         inflador = (LayoutInflater) contexto.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.grupos = grupos;
     }
@@ -44,7 +44,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
 
-        View v = inflador.inflate(R.layout.elemento_individual, null);
+        View v = inflador.inflate(R.layout.elemento_individual_grupo, null);
 
         ViewHolder pvh = new ViewHolder(v);
 

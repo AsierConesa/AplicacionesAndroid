@@ -12,7 +12,8 @@ public class bbddGrupos extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE grupos(cod_grupo INTEGER, nombregrupo TEXT)");
+        db.execSQL("CREATE TABLE grupos(cod_grupo INTEGER, nombregrupo TEXT, descripciongrupo TEXT)");
+        db.execSQL("CREATE TABLE quedadas(cod_quedada INTEGER, nombrequedada TEXT, descripcionquedada TEXT)");
         db.execSQL("CREATE TABLE integrantes(cod_integrante INTEGER, nombreintegrante TEXT)");
         db.execSQL("CREATE TABLE grupos_integrantes(cod_integrante INTEGER, cod_grupo INTEGER)");
     }
@@ -20,9 +21,11 @@ public class bbddGrupos extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS grupos");
+        db.execSQL("DROP TABLE IF EXISTS quedadas");
         db.execSQL("DROP TABLE IF EXISTS integrantes");
         db.execSQL("DROP TABLE IF EXISTS grupos_integrantes");
-        db.execSQL("CREATE TABLE grupos(cod_grupo INTEGER, nombregrupo TEXT)");
+        db.execSQL("CREATE TABLE grupos(cod_grupo INTEGER, nombregrupo TEXT, descripciongrupo TEXT)");
+        db.execSQL("CREATE TABLE quedadas(cod_quedada INTEGER, nombrequedada TEXT, descripcionquedada TEXT)");
         db.execSQL("CREATE TABLE integrantes(cod_integrante INTEGER, nombreintegrante TEXT)");
         db.execSQL("CREATE TABLE grupos_integrantes(cod_integrante INTEGER, cod_grupo INTEGER)");
     }

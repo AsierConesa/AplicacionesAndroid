@@ -1,19 +1,19 @@
 package com.example.aplicaciontrabajo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainGrupos extends AppCompatActivity {
 
     SQLiteDatabase bbdd;
     bbddGrupos conexion;
@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView.LayoutManager llm;
 
-    private RVAdapter adapter;
+    private RVAdapterGroup adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_grupos);
 
         RecyclerView rv = (RecyclerView) findViewById(R.id.rv);
 
@@ -38,35 +38,25 @@ public class MainActivity extends AppCompatActivity {
 
         rv.setLayoutManager(llm);
 
-        //crear base de datos:
+        //crear conexion a base de datos:
         conexion = new bbddGrupos(this,"bbddEmpresa",null,1);
         bbdd = conexion.getWritableDatabase(); //modo escritura
 
 
-        //inserta grupo de ejemplo ¡ESTO SOLO QUIERO QUE LO HAGA LA PRIMERA VEZ QUE ENTRA A LA APP!
-        int codigoGrupo = 0;
-        String nombreGrupo = "Grupo de ejemplo";
-
-        if(bbdd!=null){
-            String sql = ("INSERT INTO GRUPOS(COD_GRUPO,NOMBREGRUPO) VALUES(?,?)");
-
-            SQLiteStatement statement = bbdd.compileStatement(sql);
-
-            statement.clearBindings();
-
-            statement.bindLong(1,codigoGrupo);
-            statement.bindString(2,nombreGrupo);
-
-            statement.executeInsert();
-        }
-
         inicializarDatos();
 
         //se pasan los datos de la base de datos al adapter
-        adapter = new RVAdapter(this, grupos);
+        adapter = new RVAdapterGroup(this, grupos);
 
         rv.setAdapter(adapter);
 
+
+    }
+
+    public void crearNuevoElemento(View view){
+
+        Intent i = new Intent(this, NuevoElemento.class);
+        startActivity(i);
 
     }
 
