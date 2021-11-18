@@ -81,7 +81,8 @@
             android:contentDescription="@string/nuevo_grupo_quedada"
             android:onClick="crearNuevoElemento"
             app:backgroundTint="#E2C4FF"
-            app:srcCompat="@drawable/ic_plus_24" />
+            app:srcCompat="@drawable/ic_plus_24"
+            tools:ignore="ImageContrastCheck" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

@@ -13,6 +13,9 @@
             android:name=".NuevaQuedada"
             android:exported="true" />
         <activity
+            android:name=".MainQuedadas"
+            android:exported="true"/>
+        <activity
             android:name=".NuevoGrupo"
             android:exported="true" />
         <activity
@@ -21,6 +24,7 @@
         <activity
             android:name=".MainGrupos"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

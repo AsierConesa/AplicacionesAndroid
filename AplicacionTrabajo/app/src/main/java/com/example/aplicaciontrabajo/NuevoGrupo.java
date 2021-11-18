@@ -25,7 +25,7 @@ public class NuevoGrupo extends AppCompatActivity {
         setContentView(R.layout.activity_nuevo_grupo);
 
         editTextNombre = findViewById(R.id.editTextNameGrupo);
-        editTextDescripcion = findViewById(R.id.editTextGroupDescription);
+        editTextDescripcion = findViewById(R.id.editTextGroupDescription2);
 
     }
 

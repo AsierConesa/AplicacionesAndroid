@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="0.275" />
 
     <EditText
-        android:id="@+id/editTextGroupDescription"
+        android:id="@+id/editTextGroupDescription2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

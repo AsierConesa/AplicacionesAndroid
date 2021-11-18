@@ -59,12 +59,12 @@
         android:text="@string/descripci_n_de_la_quedada"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toStartOf="@+id/editTextGroupDescription"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGroupDescription2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextGroupDescription"
+        android:id="@+id/editTextGroupDescription2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="23dp"
@@ -94,6 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="32dp"
+        android:onClick="añadirNuevaQuedada"
         android:text="@string/a_adir_quedada"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/recyclerView"
