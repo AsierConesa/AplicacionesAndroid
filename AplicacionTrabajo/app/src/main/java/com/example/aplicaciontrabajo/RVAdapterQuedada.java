@@ -49,7 +49,7 @@ public class RVAdapterQuedada extends RecyclerView.Adapter<RVAdapterQuedada.View
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = inflador.inflate(R.layout.elemento_individual_quedada, null);
 
-        RVAdapterQuedada.ViewHolder pvh = new RVAdapterQuedada.ViewHolder(v);
+        ViewHolder pvh = new ViewHolder(v);
 
         return pvh;
     }
@@ -58,9 +58,9 @@ public class RVAdapterQuedada extends RecyclerView.Adapter<RVAdapterQuedada.View
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
         final int posicion=i;
 
-        viewHolder.nombreQuedada.setText(quedadas.get(posicion).nombre);
+        viewHolder.nombreQuedada.setText(String.valueOf(quedadas.get(posicion).nombre));
         viewHolder.descripcionQuedada.setText(String.valueOf(quedadas.get(posicion).descripcion));
-        viewHolder.nombreGrupo.setText("Nombre del grupo cuyo codigo es el idgrupo");
+        viewHolder.nombreGrupo.setText(String.valueOf(quedadas.get(posicion).groupname));
 
         //Asignamos un listener
         viewHolder.cv.setOnClickListener(new View.OnClickListener() {
@@ -72,10 +72,10 @@ public class RVAdapterQuedada extends RecyclerView.Adapter<RVAdapterQuedada.View
             }
         });
     }
-
+    //3º INDICAMOS EL NÚMERO DE ELEMENTOS A VISUALIZAR
     @Override
     public int getItemCount() {
-        return 0;
+        return quedadas.size();
     }
 
 

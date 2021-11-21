@@ -9,7 +9,8 @@
         android:id="@+id/cv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@android:color/holo_orange_light"
+        android:layout_margin="20px"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,49 +21,65 @@
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="146dp"
-            android:background="#CACACA"
+            android:background="#9CFFF7"
             android:padding="16dp">
 
             <TextView
                 android:id="@+id/person_name"
-                android:layout_width="317dp"
-                android:layout_height="41dp"
+                android:layout_width="220dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="131dp"
                 android:layout_marginLeft="27dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="29dp"
                 android:layout_toRightOf="@+id/person_photo"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/miembros"
-                android:layout_width="299dp"
-                android:layout_height="32dp"
+                android:layout_width="208dp"
+                android:layout_height="64dp"
                 android:layout_below="@+id/person_name"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="29dp"
+                android:layout_marginStart="130dp"
                 android:layout_marginLeft="27dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="36dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="0dp"
                 android:layout_toRightOf="@+id/person_photo"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/groupName"
-                android:layout_width="290dp"
-                android:layout_height="43dp"
+                android:layout_width="82dp"
+                android:layout_height="56dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="31dp"
-                android:layout_marginTop="87dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="74dp"
                 android:layout_marginBottom="0dp"
                 android:layout_toRightOf="@+id/person_photo"
                 android:textAlignment="center"
                 android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="82dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/ic_meeting" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

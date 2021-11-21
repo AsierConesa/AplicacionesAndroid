@@ -27,4 +27,9 @@
     <string name="imagen_del_grupo">imagen del grupo</string>
     <string name="infobtn">info</string>
     <string name="editbtn">Editar</string>
+    <string name="acercade_texto">Esta aplicación ha sido desarrollada por Asier Conesa Torres, alumno de 2 DAM en el instituto IES MAESTRE DE CALATRAVA en Ciudad Real, Esta aplicación ha sido desarrollada con motivos educativos, no se permite su libre distribución sin consentimiento del autor</string>
+    <string name="title_activity_settings">Opciones</string>
+    <string name="sync_header">Opciones</string>
+    <string name="sync_title">Tema Oscuro</string>
+    <string name="lbldate01">Fecha de la última versión:</string>
 </resources>

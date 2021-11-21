@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+//CREACION DE LA BASE DE DATOS
 public class bbddGrupos extends SQLiteOpenHelper {
 
     public bbddGrupos(Context contexto, String nombre, SQLiteDatabase.CursorFactory factory, int version){

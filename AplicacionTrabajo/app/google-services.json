@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "327035631378",
+    "project_id": "aplicaciontrabajofirebase",
+    "storage_bucket": "aplicaciontrabajofirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327035631378:android:342fca76434ceeafc865cb",
+        "android_client_info": {
+          "package_name": "com.example.aplicaciontrabajo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327035631378-572jqargvof6npb5tntqsetvutdurdok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWicIUUpwX_S2zV0Q8XTCFL5Su1I2llbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327035631378-572jqargvof6npb5tntqsetvutdurdok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

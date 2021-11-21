@@ -2,12 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_backgroundgrupo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NuevoGrupo">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_title"
         android:layout_width="344dp"
         android:layout_height="48dp"
         android:text="@string/crear_grupo"
@@ -21,51 +22,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.042" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="77dp"
-        android:layout_height="61dp"
-        android:background="#D6BDFF"
-        android:contentDescription="@string/bot_n_para_crear_grupo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.567"
-        app:srcCompat="@drawable/ic_plus_24"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="198dp"
-        android:layout_height="165dp"
-        android:contentDescription="@string/imagen_del_grupo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.769"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805"
-        app:srcCompat="@android:drawable/ic_menu_gallery"
-        tools:ignore="ImageContrastCheck" />
-
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="123dp"
-        android:layout_height="26dp"
-        android:text="@string/imagen_de_grupo"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.567" />
-
-    <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_name"
         android:layout_width="124dp"
         android:layout_height="28dp"
         android:text="@string/nombre_del_grupo"
@@ -78,13 +36,14 @@
         app:layout_constraintVertical_bias="0.162" />
 
     <EditText
-        android:id="@+id/editTextNameGrupo"
+        android:id="@+id/et_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/mi_grupo"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColorHint="#9A9A9A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.89"
@@ -94,7 +53,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_desc"
         android:layout_width="125dp"
         android:layout_height="35dp"
         android:text="@string/descripci_n_del_grupo"
@@ -107,13 +66,14 @@
         app:layout_constraintVertical_bias="0.275" />
 
     <EditText
-        android:id="@+id/editTextGroupDescription2"
+        android:id="@+id/et_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/los_mejores_amigos"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColorHint="#919191"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.895"
@@ -127,6 +87,7 @@
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
         android:onClick="añadirNuevoGrupo"
         android:text="@string/a_adir_grupo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,5 +95,5 @@
         app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

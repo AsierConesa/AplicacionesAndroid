@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Providers">
+
+    <Button
+        android:id="@+id/button_consultar"
+        android:layout_width="385dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="392dp"
+        android:onClick="click_consultar"
+        android:text="Ver contactos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_insert"
+        android:layout_width="385dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="crearContacto"
+        android:text="Insertar contacto"
+        app:layout_constraintBottom_toTopOf="@+id/button_consultar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_modificacion"
+        android:layout_width="385dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="modificarContactos"
+        android:text="Modificar contacto"
+        app:layout_constraintBottom_toTopOf="@+id/button_eliminar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="388dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="291dp"
+        android:text="Contactos"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802" />
+
+    <Button
+        android:id="@+id/button_eliminar"
+        android:layout_width="385dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="borrarContacto"
+        android:text="Eliminar contacto"
+        app:layout_constraintBottom_toTopOf="@+id/button_insert"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="309dp"
+        android:layout_height="249dp"
+        android:layout_marginBottom="100dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

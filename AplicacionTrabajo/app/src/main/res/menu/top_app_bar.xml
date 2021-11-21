@@ -2,23 +2,39 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/favorite"
-        android:contentDescription="Favoritos"
+        android:id="@+id/preferences"
+        android:contentDescription="Preferencias"
         android:icon="@android:drawable/btn_star_big_on"
-        android:title="Favoritos 2"
+        android:title="Preferencias"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/search"
         android:contentDescription="Búsqueda"
         android:icon="@android:drawable/ic_search_category_default"
-        android:title="Búsqueda 2"
+        android:title="Búsqueda"
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/more"
-        android:contentDescription="Más información"
-        android:title="Más información"
+        android:id="@+id/contacts"
+        android:contentDescription="Gestionar contactos"
+        android:title="Gestionar contactos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/web"
+        android:contentDescription="Ir a página web de android"
+        android:title="Ir a página web de android"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/email"
+        android:contentDescription="Enviar email al desarrollador"
+        android:title="Enviar email al desarrollador"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/acercade"
+        android:contentDescription="Acerca de"
+        android:title="Acerca de"
         app:showAsAction="never" />
 
 </menu>

@@ -1,14 +1,27 @@
 package com.example.aplicaciontrabajo;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
 
@@ -21,14 +34,63 @@ public class NuevaQuedada extends AppCompatActivity {
     private bbddGrupos conexion;
     private RecyclerView rv;
 
+
+    ConstraintLayout lay_background;
+    TextView title;
+    TextView tvname;
+    TextView tvdesc;
+    EditText etname;
+    EditText etdesc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nueva_quedada);
 
-        editTextNombre = findViewById(R.id.editTextNameGrupo);
-        editTextDescripcion = findViewById(R.id.editTextGroupDescription2);
+        lay_background = findViewById(R.id.lay_backgroundquedada);
+
+        title = findViewById(R.id.tv_title);
+        tvname = findViewById(R.id.tv_name);
+        tvdesc = findViewById(R.id.tv_desc);
+        etname = findViewById(R.id.et_name);
+        etdesc = findViewById(R.id.et_desc);
+
+        editTextNombre = findViewById(R.id.et_name);
+        editTextDescripcion = findViewById(R.id.et_desc);
         rv = findViewById(R.id.rv);
+
+        loadPref();
+
+    }
+
+
+
+    private void loadPref(){
+        SharedPreferences mySharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+        boolean dark;
+        dark = mySharedPreferences.getBoolean("theme", false);
+
+        if(dark){
+            lay_background.setBackgroundColor(Color.BLACK);
+            title.setTextColor(Color.WHITE);
+            tvname.setTextColor(Color.WHITE);
+            tvdesc.setTextColor(Color.WHITE);
+            etname.setTextColor(Color.WHITE);
+            etdesc.setTextColor(Color.WHITE);
+            etname.setHintTextColor(Color.GRAY);
+            etdesc.setHintTextColor(Color.GRAY);
+        }
+        else{
+            lay_background.setBackgroundColor(Color.WHITE);
+            title.setTextColor(Color.BLACK);
+            tvname.setTextColor(Color.BLACK);
+            tvdesc.setTextColor(Color.BLACK);
+            etname.setTextColor(Color.BLACK);
+            etdesc.setTextColor(Color.BLACK);
+            etname.setHintTextColor(Color.GRAY);
+            etdesc.setHintTextColor(Color.GRAY);
+        }
 
     }
 
@@ -66,9 +128,6 @@ public class NuevaQuedada extends AppCompatActivity {
 
 
 
-        //cerrar activity
-        //mostrar popup mostrando que se ha generado el grupo exitósamente
-        //actualizar recyclerview
 
 
     }

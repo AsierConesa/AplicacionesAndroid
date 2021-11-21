@@ -27,4 +27,9 @@
     <string name="imagen_del_grupo">Group image</string>
     <string name="infobtn">info</string>
     <string name="editbtn">Edit</string>
+    <string name="acercade_texto">This application has been developed by Asier Conesa Torres, student of 2 DAM in IES MAESTRE DE CALATRAVA highschool in Ciudad Real, This application has been developed with educational propouses, and its distribution is not allowed without the author\'s permission</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="sync_title">Dark theme</string>
+    <string name="sync_header">Settings</string>
+    <string name="lbldate01">Last release date:</string>
 </resources>
