@@ -5,6 +5,16 @@
       <map>
         <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.14635416666666667" />
         <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/activity_acercade.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/activity_main_grupos.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/activity_main_quedadas.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/activity_nueva_quedada.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/activity_nuevo_elemento.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/activity_nuevo_grupo.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/activity_providers.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/elemento_individual_grupo.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/elemento_individual_quedada.xml" value="0.23489583333333333" />
+        <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout-land/settings_activity.xml" value="0.23489583333333333" />
         <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout/activity_acercade.xml" value="0.25416666666666665" />
         <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout/activity_horario.xml" value="0.264" />
         <entry key="..\:/Repositorio/Desarrollo_de_aplicaciones_multimedia/AplicacionTrabajo/app/src/main/res/layout/activity_main.xml" value="0.25905797101449274" />

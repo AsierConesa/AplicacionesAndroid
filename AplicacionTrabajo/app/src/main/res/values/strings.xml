@@ -37,4 +37,9 @@
     <!-- Sync Preferences -->
     <string name="sync_title">Dark theme</string>
     <string name="lbldate01">Last release date:</string>
+    <string name="eliminar_contacto">Delete contact</string>
+    <string name="contactos">Contacts</string>
+    <string name="modificar_contacto">Edit contact</string>
+    <string name="insertar_contacto">Insert contact</string>
+    <string name="ver_contactos">Show contacts</string>
 </resources>
