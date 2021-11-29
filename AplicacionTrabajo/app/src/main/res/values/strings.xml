@@ -42,4 +42,6 @@
     <string name="modificar_contacto">Edit contact</string>
     <string name="insertar_contacto">Insert contact</string>
     <string name="ver_contactos">Show contacts</string>
+    <string name="editar_quedada">Edit Meeting</string>
+    <string name="edit_group">Edit group</string>
 </resources>

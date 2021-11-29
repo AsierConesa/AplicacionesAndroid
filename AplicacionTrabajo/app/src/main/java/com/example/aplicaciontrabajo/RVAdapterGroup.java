@@ -1,6 +1,7 @@
 package com.example.aplicaciontrabajo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,6 +20,8 @@ public class RVAdapterGroup extends RecyclerView.Adapter<RVAdapterGroup.ViewHold
     private LayoutInflater inflador;
 
     protected List<Grupo> grupos;
+
+    private static Context contexto;
 
     public RVAdapterGroup(Context contexto, List<Grupo> grupos){
         inflador = (LayoutInflater) contexto.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -38,6 +42,9 @@ public class RVAdapterGroup extends RecyclerView.Adapter<RVAdapterGroup.ViewHold
             groupPhoto = (ImageView) itemView.findViewById(R.id.person_photo);
         }
     }
+
+
+
 
     //1º CREAMOS LA VISTA SIN PERSONALIZAR CON DATOS
     //Ya devuelve un ViewHolder
@@ -64,9 +71,10 @@ public class RVAdapterGroup extends RecyclerView.Adapter<RVAdapterGroup.ViewHold
     //Asignamos un listener
         viewHolder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view){
 
-                Toast.makeText(view.getContext(), grupos.get(posicion).nombre, Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(view.getContext(), EditGrupo.class);
+                view.getContext().startActivity(i);
 
             }
         });

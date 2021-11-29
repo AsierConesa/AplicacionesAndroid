@@ -1,6 +1,7 @@
 package com.example.aplicaciontrabajo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -41,6 +43,8 @@ public class RVAdapterQuedada extends RecyclerView.Adapter<RVAdapterQuedada.View
         }
     }
 
+
+
     //1º CREAMOS LA VISTA SIN PERSONALIZAR CON DATOS
     //Ya devuelve un ViewHolder
 
@@ -67,7 +71,9 @@ public class RVAdapterQuedada extends RecyclerView.Adapter<RVAdapterQuedada.View
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(view.getContext(), quedadas.get(posicion).nombre, Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(view.getContext(), EditQuedada.class);
+                i.putExtra("pos", posicion);
+                view.getContext().startActivity(i);
 
             }
         });
