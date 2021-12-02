@@ -72,7 +72,8 @@ public class RVAdapterQuedada extends RecyclerView.Adapter<RVAdapterQuedada.View
             public void onClick(View view) {
 
                 Intent i = new Intent(view.getContext(), EditQuedada.class);
-                i.putExtra("pos", posicion);
+                i.putExtra("nombre", viewHolder.nombreQuedada.getText().toString());
+                i.putExtra("desc", viewHolder.descripcionQuedada.getText().toString());
                 view.getContext().startActivity(i);
 
             }

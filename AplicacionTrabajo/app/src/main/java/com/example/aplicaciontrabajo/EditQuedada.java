@@ -31,28 +31,12 @@ public class EditQuedada extends AppCompatActivity {
         bbdd = conexion.getReadableDatabase(); //modo lectura
 
         //variables
-        Bundle bundle = new Bundle();
-        String[] camposMostrar = new String[]{"nombrequedada","descripcionquedada"};
-        String[] valoresWhere = new String[]{String.valueOf(bundle.getInt("pos"))};
+        Bundle bundle = getIntent().getExtras();
+        String nombre = bundle.getString("nombre");
+        String desc = bundle.getString("desc");
 
-        System.out.println("la posicion devuelta es: "+bundle.getString("pos"));
-
-        if(bbdd!=null){
-            Cursor c1 = bbdd.query("Quedadas",camposMostrar,"cod_quedada=?",valoresWhere,null,null,null);
-
-            if(c1.moveToFirst()){
-                do{
-                    editTextNombreQuedada.setText(c1.getString(0));
-                    editTextDescripcionQuedada.setText(c1.getString(1));
-                }while (c1.moveToNext());
-            }
-        }
-
-    }
-    public void UpdateRegister(View view){
-
-        Toast.makeText(this, "Not implemented yet", Toast.LENGTH_SHORT).show();
-
+        editTextNombreQuedada.setText(nombre);
+        editTextDescripcionQuedada.setText(desc);
     }
 
 }

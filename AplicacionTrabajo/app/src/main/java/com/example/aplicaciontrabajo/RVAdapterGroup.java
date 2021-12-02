@@ -74,6 +74,8 @@ public class RVAdapterGroup extends RecyclerView.Adapter<RVAdapterGroup.ViewHold
             public void onClick(View view){
 
                 Intent i = new Intent(view.getContext(), EditGrupo.class);
+                i.putExtra("nombre",viewHolder.nombreGrupo.getText().toString());
+                i.putExtra("desc",viewHolder.nMiembros.getText().toString());
                 view.getContext().startActivity(i);
 
             }

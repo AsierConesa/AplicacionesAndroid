@@ -29,22 +29,12 @@ public class EditGrupo extends AppCompatActivity {
         bbdd = conexion.getReadableDatabase(); //modo lectura
 
         //variables
-        Bundle bundle = new Bundle();
-        String[] camposMostrar = new String[]{"nombregrupo","descripciongrupo"};
-        String[] valoresWhere = new String[]{String.valueOf(bundle.getInt("pos"))};
+        Bundle bundle = getIntent().getExtras();
+        String nombre = bundle.getString("nombre");
+        String desc = bundle.getString("desc");
 
-        System.out.println("la posicion devuelta es: "+bundle.getString("pos"));
-
-        if(bbdd!=null){
-            Cursor c1 = bbdd.query("Grupos",camposMostrar,"cod_grupo=?",valoresWhere,null,null,null);
-
-            if(c1.moveToFirst()){
-                do{
-                    editTextNombreGrupo.setText(c1.getString(0));
-                    editTextDescripcionGrupo.setText(c1.getString(1));
-                }while (c1.moveToNext());
-            }
-        }
+        editTextNombreGrupo.setText(nombre);
+        editTextDescripcionGrupo.setText(desc);
     }
     public void UpdateRegister(View view){
 
