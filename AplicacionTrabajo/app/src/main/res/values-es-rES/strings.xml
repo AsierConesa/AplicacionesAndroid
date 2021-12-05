@@ -32,4 +32,9 @@
     <string name="sync_header">Opciones</string>
     <string name="sync_title">Tema Oscuro</string>
     <string name="lbldate01">Fecha de la última versión:</string>
+    <string name="eliminar_contacto">Eliminar contacto</string>
+    <string name="contactos">Contactos</string>
+    <string name="modificar_contacto">Modificar contacto</string>
+    <string name="insertar_contacto">Insertar contacto</string>
+    <string name="ver_contactos">Ver contactos</string>
 </resources>

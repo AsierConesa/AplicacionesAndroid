@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicacionTrabajo">
         <activity
+            android:name=".EditQuedada"
+            android:exported="true" />
+        <activity
+            android:name=".EditGrupo"
+            android:exported="true" />
+        <activity
             android:name=".SettingsActivity"
             android:exported="true" />
         <activity

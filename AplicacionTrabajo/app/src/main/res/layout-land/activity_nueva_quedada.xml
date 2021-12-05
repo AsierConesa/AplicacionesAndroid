@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_backgroundquedada"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevaQuedada">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/crear_quedada"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="155dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/nombre_de_la_quedada"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:hint="@string/mi_quedada"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/descripci_n_de_la_quedada"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <EditText
+        android:id="@+id/et_desc"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:hint="@string/salida_de_domingo"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_desc"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnAddQuedada"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="añadirNuevaQuedada"
+        android:text="@string/a_adir_quedada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

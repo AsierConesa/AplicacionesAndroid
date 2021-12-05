@@ -9,11 +9,11 @@
     <Button
         android:id="@+id/button_consultar"
         android:layout_width="385dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="392dp"
         android:onClick="click_consultar"
-        android:text="Ver contactos"
+        android:text="@string/ver_contactos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -24,18 +24,18 @@
         android:layout_marginStart="12dp"
         android:layout_marginBottom="8dp"
         android:onClick="crearContacto"
-        android:text="Insertar contacto"
+        android:text="@string/insertar_contacto"
         app:layout_constraintBottom_toTopOf="@+id/button_consultar"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_modificacion"
         android:layout_width="385dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="4dp"
         android:onClick="modificarContactos"
-        android:text="Modificar contacto"
+        android:text="@string/modificar_contacto"
         app:layout_constraintBottom_toTopOf="@+id/button_eliminar"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -45,7 +45,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="62dp"
         android:layout_marginBottom="291dp"
-        android:text="Contactos"
+        android:text="@string/contactos"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="34sp"
@@ -62,7 +62,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginBottom="8dp"
         android:onClick="borrarContacto"
-        android:text="Eliminar contacto"
+        android:text="@string/eliminar_contacto"
         app:layout_constraintBottom_toTopOf="@+id/button_insert"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -71,7 +71,6 @@
         android:layout_width="309dp"
         android:layout_height="249dp"
         android:layout_marginBottom="100dp"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

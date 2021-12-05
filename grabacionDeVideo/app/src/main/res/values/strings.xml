@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">grabacionDeVideo</string>
+    <string name="comenzarGrabacion">Comenzar Grabación</string>
+    <string name="seleccionarGaleria">Seleccionar de la galería</string>
+</resources>
